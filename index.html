@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Glenn Heinze</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="lib/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="lib/d3.min.js"></script>
+        <script type="text/javascript" src="lib/d3-axis.min.js"></script>
+        <script type="text/javascript" src="lib/d3-scale.min.js"></script>
+        <script type="text/javascript" src="lib/d3-scale-chromatic.min.js"></script>
+        <script type="text/javascript" src="lib/d3-path.min.js"></script>
+
+        <script type="text/javascript" src="js/resume.js"></script>
+
+        <script type="text/javascript" src="js/jobData.js"></script>
+        <script type="text/javascript" src="js/languageData.js"></script>
+
+        <script type="text/javascript" src="js/languageController.js"></script>
+        <script type="text/javascript" src="js/jobController.js"></script>
+
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    </head>
+
+    <body>
+
+        <div>
+            <h1>An Interactive Resume for Glenn Heinze</h1>
+            <p>A mini-project as an exercise for experimenting with the graphing library
+                <a href="https://d3js.org/">D3.js</a>.
+            </p>
+        </div>
+
+        <div id = "viewSelectionId">
+
+            <input id="jobsId" type = "checkbox" style = "margin-left: 50px;" />
+            <label for = "jobsId">Jobs</label>
+
+            <input id = "languagesId" type = "checkbox" />
+            <label for = "languagesId">Language Activity</label>
+
+        </div>
+
+        <div id="jobsSvgContainerId" class="svg-container"></div>
+
+    </body>
+
+</html>

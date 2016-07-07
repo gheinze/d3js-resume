@@ -1,0 +1,6 @@
+=== D3js Interactive Resume for Glenn Heinze
+
+A mini-project as an exercise for experimenting with the graphing library https://d3js.org/[D3.js].
+
+No frameworks, build systems, package management systems, etc: just a bit of jQuery and JavaScript.
+
