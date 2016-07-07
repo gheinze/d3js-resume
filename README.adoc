@@ -2,5 +2,6 @@
 
 A mini-project as an exercise for experimenting with the graphing library https://d3js.org/[D3.js].
 
-No frameworks, build systems, package management systems, etc: just a bit of jQuery and JavaScript.
+No frameworks, build systems, or package management systems: just a bit of jQuery and JavaScript.
 
+https://gheinze-resume.herokuapp.com/[Demo] deployed on Heroku.
