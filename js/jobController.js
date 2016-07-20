@@ -1,5 +1,3 @@
-"use strict";
-
 /* global d3 */
 /* global appModel */
 
@@ -11,6 +9,8 @@
  * @returns {undefined}
  */
 (function(exports) {
+
+    "use strict";
 
     var jobLabelOffsets = defineJobLabelOffsets();
 

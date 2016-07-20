@@ -1,5 +1,3 @@
-"use strict";
-
 /* global d3 */
 
 
@@ -18,6 +16,8 @@ $(document).ready(function () {
 
 
 (function(exports) {
+
+    "use strict";
 
     exports.jobSvgExtents = defineJobSvgAreaExtents();
 
@@ -63,8 +63,8 @@ $(document).ready(function () {
     function defineJobSvgScales() {
 
         var xScale = d3.scaleTime()
-                       .domain( [ d3.min(exports.jobs, function(d) { return d.startDate; })
-                                 ,d3.max(exports.jobs, function(d) { return d.endDate; })
+                       .domain( [ d3.min(exports.jobs, function(d) { return d.startDate; }),
+                                  d3.max(exports.jobs, function(d) { return d.endDate; })
                                 ] )
                        .rangeRound([exports.jobSvgExtents.margin.left, exports.jobSvgExtents.margin.left + exports.jobSvgExtents.dataArea.w])
                        ;
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
         var colorScale = d3.scaleLinear()
                            .domain( [0, exports.jobs.length] )
-                           .range([0.25, .50])
+                           .range([0.25, 0.50])
                            ;
 
         return {xScale: xScale, yScale: yScale, colorScale: colorScale};
@@ -182,7 +182,7 @@ $(document).ready(function () {
 
         }
 
-    };
+    }
 
 
 })(appModel);
